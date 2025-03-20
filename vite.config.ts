@@ -4,6 +4,5 @@ import { viteCommonjs } from "@originjs/vite-plugin-commonjs";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
   plugins: [vue(), viteCommonjs()],
 })
