@@ -1,0 +1,85 @@
+import type { ComAttribute } from "../attributeMap";
+
+export const datePickerAttribute: ComAttribute[] = [
+  {
+    label: "字段标识",
+    propName: "comUUID",
+    propValue: "",
+    type: "input",
+    defaultValue: "datePicker",
+  },
+  {
+    label: "标题",
+    propName: "label",
+    propValue: "",
+    type: "input",
+    defaultValue: "日期选择器",
+  },
+  {
+    label: "选择日期",
+    propName: "content",
+    propValue: "",
+    type: "date-picker",
+    defaultValue: "",
+  },
+  {
+    label: "占位文本",
+    propName: "placeholder",
+    propValue: "",
+    type: "input",
+    defaultValue: "Pick a day",
+  },
+
+  {
+    label: "日期单位",
+    propName: "type",
+    propValue: "",
+    type: "select",
+    options: [
+      { label: "日", value: "date" },
+      { label: "周", value: "week" },
+      { label: "月", value: "month" },
+      { label: "年", value: "year" },
+      { label: "日（多个日期）", value: "dates" },
+      { label: "月（多个日期）", value: "months" },
+      { label: "年（多个日期）", value: "years" },
+      { label: "日期（范围）", value: "daterange" },
+      { label: "月份（范围）", value: "monthrange" },
+      { label: "年份（范围）", value: "yearrange" },
+    ],
+    defaultValue: "date",
+  },
+  {
+    label: "日期格式",
+    propName: "format",
+    propValue: "",
+    type: "select",
+    options: [
+      { label: "YYYY/MM/DD", value: "YYYY/MM/DD" },
+      { label: "YYYY-MM-DD", value: "YYYY-MM-DD" },
+      { label: "YYYY:MM:DD", value: "YYYY:MM:DD" },
+    ],
+    defaultValue: "YYYY/MM/DD",
+  },
+  {
+    label: "范围分隔符",
+    propName: "range-separator",
+    propValue: "",
+    type: "input",
+    defaultValue: "-",
+  },
+  {
+    label: "面板联动",
+    propName: "unlink-panels",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "一键清除",
+    propName: "clearable",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+];

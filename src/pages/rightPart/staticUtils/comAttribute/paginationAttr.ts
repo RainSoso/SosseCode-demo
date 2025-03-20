@@ -1,0 +1,96 @@
+import type { ComAttribute } from "../attributeMap";
+
+export const paginationAttribute: ComAttribute[] = [
+  {
+    label: "字段标识",
+    propName: "comUUID",
+    propValue: "",
+    type: "input",
+    defaultValue: "pagination",
+  },
+  {
+    label: "标题",
+    propName: "label",
+    propValue: "",
+    type: "input",
+    defaultValue: "分页",
+  },
+  {
+    label: "每页条数",
+    propName: "pageSize",
+    propValue: "",
+    type: "input-number-position",
+    defaultValue: 10,
+  },
+
+  {
+    label: "总条目数",
+    propName: "totalCount",
+    propValue: "",
+    type: "input-number-position",
+    defaultValue: 50,
+  },
+  {
+    label: "当前页数",
+    propName: "currentPage",
+    propValue: "",
+    type: "input-number-position",
+    defaultValue: 1,
+  },
+  {
+    label: "页码按钮数",
+    propName: "pagerCount",
+    propValue: "",
+    type: "input-number-position",
+    defaultValue: 5,
+  },
+  {
+    label: "小型分页",
+    propName: "small",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "显示背景色",
+    propName: "background",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "显示总条数",
+    propName: "showCount",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "页数切换",
+    propName: "pageChange",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "快速跳转",
+    propName: "jumpTo",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "单页隐藏",
+    propName: "hideOnSinglePage",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "禁用分页",
+    propName: "disabled",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+];

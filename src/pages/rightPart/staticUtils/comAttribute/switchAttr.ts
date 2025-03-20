@@ -1,0 +1,97 @@
+import type { ComAttribute } from "../attributeMap";
+
+export const switchAttribute: ComAttribute[] = [
+  {
+    label: "字段标识",
+    propName: "comUUID",
+    propValue: "",
+    type: "input",
+    defaultValue: "switch",
+  },
+  {
+    label: "标题",
+    propName: "label",
+    propValue: "",
+    type: "input",
+    defaultValue: "开关",
+  },
+  {
+    label: "选中状态",
+    propName: "content",
+    propValue: "",
+    type: "radio-button",
+    options: [
+      { label: "开", value: true },
+      { label: "关", value: false },
+    ],
+    defaultValue: false,
+  },
+  {
+    label: "开关宽度",
+    propName: "width",
+    propValue: "",
+    type: "input-number",
+    defaultValue: "",
+  },
+  {
+    label: "选中背景",
+    propName: "onColor",
+    propValue: "",
+    type: "colorPicker",
+    defaultValue: "",
+  },
+  {
+    label: "未选中背景",
+    propName: "offColor",
+    propValue: "",
+    type: "colorPicker",
+    defaultValue: "",
+  },
+  {
+    label: "开关尺寸",
+    propName: "switchSize",
+    propValue: "",
+    type: "radio-button",
+    options: [
+      { label: "大型", value: "large" },
+      { label: "默认", value: "" },
+      { label: "小型", value: "small" },
+    ],
+    defaultValue: "",
+  },
+  {
+    label: "选中文字",
+    propName: "active-text",
+    propValue: "",
+    type: "input",
+    defaultValue: "",
+  },
+  {
+    label: "未选中文字",
+    propName: "inactive-text",
+    propValue: "",
+    type: "input",
+    defaultValue: "",
+  },
+  {
+    label: "点内文本",
+    propName: "inline-prompt",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "加载状态",
+    propName: "loading",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+  {
+    label: "禁用状态",
+    propName: "disabled",
+    propValue: "",
+    type: "switch",
+    defaultValue: false,
+  },
+];
